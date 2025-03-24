@@ -2,9 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#D7D7D7</color>
     <color name="top_planka">#29578E</color>
     <color name="top_container_back">#16417233</color>
+    <color name="top_p1lanka">#24456E</color>
     <color name="text_plank">#29578E40</color>
     <color name="color_button">#29578E</color>
+    <color name="color_background_blue">#A779E2DD</color>
+    <color name="color_button_post">#72E0FF</color>
 
 </resources>
