@@ -1,0 +1,171 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Фонове зображення -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        android:src="@drawable/background_image" />
+
+    <!-- Напівпрозорий фон поверх зображення -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background_blue"
+        android:orientation="vertical" />
+
+    <!-- Верхня панель -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_button"
+        android:padding="10dp"
+        android:elevation="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CutieGram"
+            android:fontFamily="@font/merienda_variable_font"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-12dp" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_mail" />
+    </LinearLayout>
+
+    <!-- Основний контент -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Фото профілю -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фото профілю"
+                android:paddingStart="25dp"
+                android:fontFamily="@font/kameron_variable_font"
+                android:textColor="@color/top_planka"
+                android:layout_marginTop="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:clipToOutline="true"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_shape"
+                android:src="@tools:sample/avatars" />
+
+            <!-- Ім’я -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ім'я"
+                android:fontFamily="@font/kameron_variable_font"
+                android:paddingStart="25dp"
+                android:textColor="@color/top_planka"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Josephina"
+                android:paddingStart="25dp"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#FFFFFF" />
+
+            <!-- Ім’я користувача -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ім'я користувача"
+                android:paddingStart="25dp"
+                android:fontFamily="@font/kameron_variable_font"
+                android:textColor="@color/top_planka"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="gdhjsgdkha"
+                android:paddingStart="25dp"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#FFFFFF" />
+
+            <!-- Фон профілю -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фон профілю"
+                android:paddingStart="25dp"
+                android:fontFamily="@font/kameron_variable_font"
+                android:textColor="@color/top_planka"
+                android:layout_marginTop="16dp" />
+
+            <ImageView
+                android:id="@+id/image1View"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:contentDescription="@null"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <!-- Кнопка збереження -->
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:text="Зберегти"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/kameron_variable_font"
+                android:background="@color/color_button"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

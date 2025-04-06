@@ -146,17 +146,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Josephina"
+                        android:fontFamily="@font/kameron_variable_font"
                         android:textColor="@color/white" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="gdhjsgdkha"
+                        android:fontFamily="@font/kameron_variable_font"
                         android:textColor="@color/grey" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/kameron_variable_font"
                         android:text="опис.............................."
 
                         android:textColor="@color/white" />
@@ -168,6 +171,7 @@
                     android:layout_height="wrap_content"
                     android:clipChildren="false"
                     android:clipToPadding="false"
+                    android:paddingStart="25dp"
                     android:orientation="horizontal"
                     >
 
@@ -176,6 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="50dp"
                         android:text="0 Читачі"
+                        android:fontFamily="@font/kameron_variable_font"
                         android:textColor="@color/white" />
 
 
@@ -183,6 +188,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0 Відстежуються"
+                        android:fontFamily="@font/kameron_variable_font"
                         android:textColor="@color/white" />
                 </LinearLayout>
 
