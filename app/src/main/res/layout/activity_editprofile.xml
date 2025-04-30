@@ -32,13 +32,13 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-12dp"
             android:layout_weight="1"
+            android:fontFamily="sans-serif"
             android:text="CutieGram"
-            android:fontFamily="@font/merienda_variable_font"
             android:textColor="@android:color/white"
             android:textSize="26sp"
-            android:textStyle="bold"
-            android:layout_marginTop="-12dp" />
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="34dp"
@@ -71,29 +71,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Фото профілю"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
                 android:paddingStart="25dp"
-                android:fontFamily="@font/kameron_variable_font"
-                android:textColor="@color/top_planka"
-                android:layout_marginTop="16dp" />
+                android:text="Фото профілю"
+                android:textColor="@color/top_planka" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="100dp"
                 android:clipToOutline="true"
                 android:layout_height="100dp"
-                android:background="@drawable/circle_shape"
-                android:src="@tools:sample/avatars" />
+                android:background="@drawable/circle_shape" />
 
             <!-- Ім’я -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ім'я"
-                android:fontFamily="@font/kameron_variable_font"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
                 android:paddingStart="25dp"
-                android:textColor="@color/top_planka"
-                android:layout_marginTop="16dp" />
+                android:text="Ім'я"
+                android:textColor="@color/top_planka" />
 
             <EditText
                 android:id="@+id/edit_name"
@@ -115,11 +114,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ім'я користувача"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
                 android:paddingStart="25dp"
-                android:fontFamily="@font/kameron_variable_font"
-                android:textColor="@color/top_planka"
-                android:layout_marginTop="16dp" />
+                android:text="Ім'я користувача"
+                android:textColor="@color/top_planka" />
 
             <EditText
                 android:id="@+id/edit_username"
@@ -141,11 +140,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Фон профілю"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
                 android:paddingStart="25dp"
-                android:fontFamily="@font/kameron_variable_font"
-                android:textColor="@color/top_planka"
-                android:layout_marginTop="16dp" />
+                android:text="Фон профілю"
+                android:textColor="@color/top_planka" />
 
             <ImageView
                 android:id="@+id/image1View"
@@ -160,10 +159,10 @@
                 android:id="@+id/btn_save"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
-                android:text="Зберегти"
                 android:layout_marginTop="12dp"
-                android:fontFamily="@font/kameron_variable_font"
                 android:background="@color/color_button"
+                android:fontFamily="sans-serif"
+                android:text="Зберегти"
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>

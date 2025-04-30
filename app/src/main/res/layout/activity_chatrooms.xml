@@ -44,13 +44,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/input_background"
+                android:fontFamily="sans-serif"
                 android:hint="Пошук"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColorHint="@color/white"
-                android:fontFamily="@font/kameron_variable_font"
                 android:paddingStart="50dp"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="20dp"
@@ -83,8 +83,7 @@
                 android:layout_height="60dp"
                 android:layout_marginRight="20dp"
                 android:layout_gravity="center"
-                android:background="@drawable/circle_shape"
-                android:src="@tools:sample/avatars" />
+                android:background="@drawable/circle_shape" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
