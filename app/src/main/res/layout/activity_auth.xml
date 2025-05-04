@@ -4,21 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_image"
-    android:gravity="center"
-    >
+    android:gravity="center">
 
     <!-- Верхній контейнер -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/container_background"
         android:orientation="vertical"
         android:padding="20dp">
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,9 +30,7 @@
             android:id="@+id/loginLayout"
             android:layout_width="250dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="23dp"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="23dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/input_background"
             android:fontFamily="sans-serif"
@@ -44,16 +38,14 @@
             android:padding="7dp"
             android:textColor="@android:color/white"
             android:textColorHint="@color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/PasswordLayout"
             android:layout_width="250dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="23dp"
             android:layout_marginTop="2dp"
-            android:layout_marginRight="23dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/input_background"
             android:fontFamily="sans-serif"
@@ -62,19 +54,19 @@
             android:padding="7dp"
             android:textColor="@android:color/white"
             android:textColorHint="@color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/LoginButton"
-            android:layout_width="280dp"
+            android:layout_width="250dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="23dp"
-            android:layout_marginRight="23dp"
+            android:layout_marginBottom="7dp"
             android:background="@drawable/auth_button"
             android:fontFamily="sans-serif"
             android:text="Вхід"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
@@ -87,20 +79,17 @@
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
-
     </LinearLayout>
+
     <!-- Нижній контейнер -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/container_background"
-        >
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -110,17 +99,15 @@
             android:text="Не маєте аккаунта?"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <Button
+            android:id="@+id/ButtonToReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:background="@android:color/transparent"
             android:text="Створити"
             android:textColor="@color/color_button" />
-
     </LinearLayout>
-
 </LinearLayout>

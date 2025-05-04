@@ -13,39 +13,53 @@
     <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="50dp"
+        android:layout_height="56dp"
+        android:elevation="8dp"
         android:background="@color/color_button"
         android:orientation="horizontal"
-        android:padding="10dp"
+        android:gravity="center_vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Назва (ліворуч) -->
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-12dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="sans-serif"
             android:text="CutieGram"
             android:textColor="@android:color/white"
-            android:textSize="26dp"
-            android:textStyle="bold" />
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingStart="22dp"
+            android:gravity="center_vertical|start" />
 
-        <ImageView
-            android:layout_width="34dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:layout_marginRight="50dp"
-            android:src="@drawable/ic_search" />
+        <!-- Іконки (праворуч) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <ImageView
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_mail" />
+            <!-- Лупа -->
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_search"
+                android:padding="12dp" />
 
+            <!-- Лист -->
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mail"
+                android:padding="12dp" />
+        </LinearLayout>
     </LinearLayout>
 
     <!-- ScrollView для скролінгу всього контенту -->
@@ -55,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@id/topBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
         android:fillViewport="true">
 
         <!-- Обгортаємо всі елементи в LinearLayout -->
@@ -90,7 +104,6 @@
                     android:clipChildren="false"
                     android:weightSum="1"
                     android:background="@color/color_background_blue">  <!-- Фото як фон -->
-
 
                     <!-- зона аватара -->
                     <LinearLayout
@@ -160,7 +173,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
-
                             android:text="опис.............................." />
                     </LinearLayout>
 
@@ -180,7 +192,6 @@
                             android:layout_marginRight="50dp"
                             android:text="0 Читачі" />
 
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -193,8 +204,7 @@
                         android:layout_height="wrap_content"
                         android:columnCount="3"
                         android:orientation="horizontal"
-                        android:padding="16dp"
-                        >
+                        android:padding="16dp">
 
                         <!-- Фото 1 -->
                         <ImageView
@@ -268,4 +278,58 @@
             </FrameLayout>
         </LinearLayout>
     </ScrollView>
+
+    <!-- Нижнє меню -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/top_planka"
+        android:paddingHorizontal="22dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_users"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_add"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_toggle"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
